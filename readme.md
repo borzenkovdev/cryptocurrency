@@ -31,9 +31,9 @@ php artisan currencies:history
 
 ```
 Запустить обновление данных по крипто валютам   - php artisan currencies:update  
-``````
+``
 Запустить сохранение данных по изменению курса - php artisan currencies:history  
-``````
+``
 Запустить удаление устаревших данных   - php artisan currencies:delete_old  
 ```
 
