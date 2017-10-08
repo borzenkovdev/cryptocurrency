@@ -57,7 +57,7 @@ app.controller("ListController",['$interval', '$scope', '$cookies', 'NgTablePara
                     params.total(req.count);
                     return req.rows;
                 }).catch(function (e) {
-                    alert('Нет связи с сервером');
+                    alert('РќРµС‚ СЃРІСЏР·Рё СЃ СЃРµСЂРІРµСЂРѕРј');
                     console.log('Error request');
                     $interval.cancel(interval);
                 })
@@ -96,7 +96,7 @@ app.controller("DetailController",['$interval', '$scope', '$cookies', 'NgTablePa
                     params.total(req.count);
                     return req.rows;
                 }).catch(function (e) {
-                    alert('Нет связи с сервером');
+                    alert('РќРµС‚ СЃРІСЏР·Рё СЃ СЃРµСЂРІРµСЂРѕРј');
                     console.log('Error request');
                     $interval.cancel(interval);
                 })
@@ -112,7 +112,7 @@ app.controller("DetailController",['$interval', '$scope', '$cookies', 'NgTablePa
 }]);
 
 /**
- * Сраниванивает элементы массива и подсвечивает если изменился процент
+ * РЎСЂР°РЅРёРІР°РЅРёРІР°РµС‚ СЌР»РµРјРµРЅС‚С‹ РјР°СЃСЃРёРІР° Рё РїРѕРґСЃРІРµС‡РёРІР°РµС‚ РµСЃР»Рё РёР·РјРµРЅРёР»СЃСЏ РїСЂРѕС†РµРЅС‚
  * @param oldList
  * @param newList
  * @returns {boolean}
@@ -126,10 +126,10 @@ function compareLists (oldList, newList) {
             return item.id == oldItem.id;
         });
         if (newItem[0].percent > oldItem.percent) {
-            //подсвечиваем зелёным
+            //РїРѕРґСЃРІРµС‡РёРІР°РµРј Р·РµР»С‘РЅС‹Рј
             $("#currency_id_" + newItem[0].id).highlight(true);
         } else if (newItem[0].percent < oldItem.percent) {
-            //подсвечиваем красным
+            //РїРѕРґСЃРІРµС‡РёРІР°РµРј РєСЂР°СЃРЅС‹Рј
             $("#currency_id_" + newItem[0].id).highlight(false);
         }
     });
