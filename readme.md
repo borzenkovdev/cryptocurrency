@@ -1,45 +1,43 @@
-<h2>Приложение, в реальном времени показывает/обновляет стоимость/%роста крипто-валют из разных источников.</h2>
+<h2>An application that shows/updates the value/% growth of cryptocurrencies from different sources in real time.</h2>
 
-## Установка
+## Installation
 
 **NPM**
 
 ```
-npm install 
+npm install
 ```
 **Composer**
 
 ```
-composer install 
+composer install
 ```
 
 **database**
 
 ```
-Создать базу данных.
-Поменять доступы в файле .env
-Запустить миграции   - php artisan migrate  
+Create a database.
+Change permissions in the .env file
+Run migrations - php artisan migrate
 ```
-**Запустить консольные команды**
+**Run console commands**
 
 ```
-php artisan currencies:update  
-php artisan currencies:history 
+php artisan currencies:update
+php artisan currencies:history
 
-Чтобы появились данные
+For the data to appear
 ```
 
-## Консольные команды
+## Console commands
 
 ```
-Запустить обновление данных по крипто валютам   - php artisan currencies:update  
+Start updating data on crypto currencies - php artisan currencies:update
 ``
-Запустить сохранение данных по изменению курса - php artisan currencies:history  
+Start saving data on rate changes - php artisan currencies:history
 ``
-Запустить удаление устаревших данных   - php artisan currencies:delete_old  
+Run deletion of obsolete data - php artisan currencies:delete_old
 ```
 
-## Compatibility
+##Compatibility
 PHP 7+
-
-
